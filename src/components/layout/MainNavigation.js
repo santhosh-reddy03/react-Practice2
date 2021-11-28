@@ -12,11 +12,6 @@ const MainNavigation = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/quotes/:quoteid' activeClassName={classes.active}>
-                            QuoteDetail
-                        </NavLink>
-                    </li>
-                    <li>
                         <NavLink to='/newquotes' activeClassName={classes.active}>
                             NewQuote
                         </NavLink>
