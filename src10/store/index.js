@@ -3,10 +3,10 @@ import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./counter";
 import authReducer from "./auth";
 
-
-
 //combineReducers({reducers: counterSlice.reducer})
-const store = configureStore({reducer: {counter: counterReducer, auth: authReducer}});
+const store = configureStore({
+  reducer: { counter: counterReducer, auth: authReducer },
+});
 
 // const countReducer = (state = initialState, action) => {
 //     if (action.type === 'INCREMENT') {
@@ -20,7 +20,7 @@ const store = configureStore({reducer: {counter: counterReducer, auth: authReduc
 //         return {
 //             count: state.count - 1,
 //             show: state.show
-//         }   
+//         }
 //     }
 
 //     if (action.type === 'INCREASE') {
@@ -37,7 +37,6 @@ const store = configureStore({reducer: {counter: counterReducer, auth: authReduc
 //     }
 //     return state;
 // }
-
 
 // const store = createStore(countReducer);
 
